@@ -50,6 +50,7 @@ public class AcquistiDaoImpl implements DAOacquisti {
         EntityManager entityManager = JPAUtil.getEntityManager();
         try {
             entityManager.getTransaction().begin();
+            //questo merge dovrebbe aggiornare l istanza e nel caso non ci sia ne carica una VERIFICARE CORRETTEZZA
             entityManager.merge(acquisto);
             entityManager.getTransaction().commit();
         } catch (Exception e) {

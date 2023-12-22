@@ -1,4 +1,4 @@
-package model;
+package it.betacom.main;
 
 import model.Clienti;
 import model.Acquistianimali;
